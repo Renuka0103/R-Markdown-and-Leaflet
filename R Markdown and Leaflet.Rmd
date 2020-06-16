@@ -1,0 +1,17 @@
+---
+title: 'Peer-graded Assignment: R Markdown and Leaflet'
+author: "Renuka"
+date: "16/06/2020"
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>% 
+  addTiles()
+my_map <- my_map %>%
+  addMarkers(lat=16.992500, lng=73.294197, 
+             popup="Home Town")
+my_map
+```
+
